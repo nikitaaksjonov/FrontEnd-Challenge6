@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+main{
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 350px ;
+    margin: 2rem;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container >*{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.container h1{
+    font-weight: 900;
+    font-size: 22px;
+}
+.container p{
+    color: hsl(224, 23%, 55%);
+    font-size: small;
+}
+.anual-plan-container{
+    height: 5rem;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+.anual-plan-container, .anual-plan-container>*{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price img{
+    width: 40px;
+    margin-right: 20px;
+    object-fit: scale-down;
+}
+.anual-plan h2{
+    font-weight: 700;
+    font-size: 13px;
+}
+.container button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 2px hsla(245, 75%, 52%, 0.263);
+    cursor: pointer;
+}
+.anual-plan-container p a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.anual-plan-container a:hover, .container button:hover{
+    text-decoration: none;
+    opacity: 0.5;
+}
+.cancel{
+    margin: 0;
+}
+.container a{
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+.container p :hover{
+    color: black;
+}
